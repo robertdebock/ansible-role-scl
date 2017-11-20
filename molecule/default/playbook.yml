@@ -12,5 +12,3 @@
         state: present
       when:
         - ( ansible_distribution == "CentOS" )
-
-      
