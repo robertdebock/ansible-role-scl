@@ -10,3 +10,7 @@
       package:
         name: python27-python-pip
         state: present
+      when:
+        - ( ansible_distribution == "CentOS" )
+
+      
