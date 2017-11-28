@@ -21,7 +21,7 @@ Dependencies
 
 - robertdebock/ansible-role-bootstrap
 
-Download the dependencies by issueing this command:
+Download the dependencies by issuing this command:
 ```
 ansible-galaxy install --role-file requirements.yml
 ```
@@ -35,7 +35,7 @@ Example Playbook
   become: yes
 
   roles:
-    - ansible-role-scl
+    - robertdebock.ansible-role-scl
 
   tasks:
     - name: install package from scl
@@ -43,6 +43,8 @@ Example Playbook
         name: python27-python-pip
         state: present    
 ```
+
+Install this role using `galaxy install robertdebock.ansible-role-scl`.
 
 License
 -------
