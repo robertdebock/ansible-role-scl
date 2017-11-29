@@ -1,7 +1,7 @@
 scl
 =========
 
-[![Build Status](https://travis-ci.org/robertdebock.ansible-role-scl.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-scl)
+[![Build Status](https://travis-ci.org/robertdebock/ansible-role-scl.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-scl)
 
 Install Sofware Collections for and CentOS.
 Applying this role to other types of operating systems will simply "skip" the job.
