@@ -1,7 +1,7 @@
-ansible-role-scl
+scl
 =========
 
-[![Build Status](https://travis-ci.org/robertdebock/ansible-role-scl.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-scl)
+[![Build Status](https://travis-ci.org/robertdebock.ansible-role-scl.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-scl)
 
 Install Sofware Collections for and CentOS.
 Applying this role to other types of operating systems will simply "skip" the job.
@@ -19,7 +19,7 @@ None known.
 Dependencies
 ------------
 
-- robertdebock/ansible-role-bootstrap
+- robertdebock.bootstrap
 
 Download the dependencies by issuing this command:
 ```
@@ -35,7 +35,7 @@ Example Playbook
   become: yes
 
   roles:
-    - robertdebock.ansible-role-scl
+    - robertdebock.scl
 
   tasks:
     - name: install package from scl
@@ -44,7 +44,7 @@ Example Playbook
         state: present    
 ```
 
-Install this role using `galaxy install robertdebock.ansible-role-scl`.
+Install this role using `galaxy install robertdebock.scl`.
 
 License
 -------

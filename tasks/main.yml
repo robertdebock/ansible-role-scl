@@ -1,5 +1,5 @@
 ---
-# tasks file for ansible-role-scl
+# tasks file for scl
 - name: install centos-release-scl
   package:
     name: centos-release-scl
