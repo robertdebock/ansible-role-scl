@@ -4,7 +4,7 @@
   gather_facts: no
 
   roles:
-    - role: ansible-role-scl
+    - role: robertdebock.scl
 
   tasks:
     - name: install a package from scl
