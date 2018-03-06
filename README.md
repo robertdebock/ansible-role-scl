@@ -19,6 +19,8 @@ None known.
 Dependencies
 ------------
 
+Use this role to prepare your system:
+
 - robertdebock.bootstrap
 
 Download the dependencies by issuing this command:
@@ -35,7 +37,8 @@ Example Playbook
   become: yes
 
   roles:
-    - robertdebock.scl
+    - role: robertdebock.bootstrap
+    - role: robertdebock.scl
 
   tasks:
     - name: install package from scl
