@@ -15,3 +15,6 @@
         state: present
       when:
         - ( ansible_distribution == "CentOS" )
+      register: result
+      until: result is succeeded
+      retries: 3 
