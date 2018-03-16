@@ -17,4 +17,4 @@
         - ( ansible_distribution == "CentOS" )
       register: result
       until: result is succeeded
-      retries: 3 
+      retries: 3
