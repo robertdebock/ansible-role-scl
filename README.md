@@ -7,7 +7,7 @@ Install Sofware Collections for and CentOS.
 Applying this role to other types of operating systems will simply "skip" the job.
 
 Context
---------
+-------
 This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
 
 Here is an overview of related roles:
@@ -34,6 +34,16 @@ Download the dependencies by issuing this command:
 ```
 ansible-galaxy install --role-file requirements.yml
 ```
+
+Compatibility
+-------------
+
+This role has been tested against the following distributions and Ansible version:
+
+|distribution|ansible 2.3|ansible 2.4|ansible 2.5|
+|------------|-----------|-----------|-----------|
+|centos-6|yes|yes|yes|
+|centos-7|yes|yes|yes|
 
 Example Playbook
 ----------------
