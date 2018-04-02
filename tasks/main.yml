@@ -5,4 +5,4 @@
     name: centos-release-scl
     state: present
   when:
-    - ( ansible_distribution == "CentOS" )
+    - ( ansible_distribution == "CentOS" or ansible_distribution == "Red Hat Enterprise Linux" )
