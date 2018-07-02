@@ -25,9 +25,9 @@ galaxy_info:
     - repository
     - installer
     - packages
-    - Alpine
-    - CentOS
-    - Fedora
-    - RHEL
+    - alpine
+    - centos
+    - fedora
+    - rhel
 
 dependencies: []
