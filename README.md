@@ -61,7 +61,6 @@ Example Playbook
     - name: install package from scl
       package:
         name: python27-python-pip
-        state: present    
 ```
 
 Install this role using `galaxy install robertdebock.scl`.
