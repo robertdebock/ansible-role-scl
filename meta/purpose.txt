@@ -1,3 +1,0 @@
-Install Sofware Collections for and CentOS.
-
-Applying this role to other types of operating systems than Red Hat will simply "skip" the jobs in this.
