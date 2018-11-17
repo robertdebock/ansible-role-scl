@@ -38,6 +38,8 @@ platforms:
     image: ubuntu:artful
   - name: scl-ubuntu-devel
     image: ubuntu:devel
+  - name: scl-ubuntu-latest
+    image: ubuntu:latest
 provisioner:
   name: ansible
   lint:
