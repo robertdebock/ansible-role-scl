@@ -5,4 +5,4 @@
     name: centos-release-scl
     state: "{{ scl_package_state }}"
   when:
-    - ( ansible_distribution == "CentOS" or ansible_distribution == "Red Hat Enterprise Linux" )
+    - ansible_distribution in [ "CentOS", "RedHat" ]
