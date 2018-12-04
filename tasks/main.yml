@@ -6,3 +6,6 @@
     state: "{{ scl_package_state }}"
   when:
     - ansible_distribution in [ "CentOS", "RedHat" ]
+  register: scl_install_centos_release_scl
+  until: scl_install_centos_release_scl
+  retries: 3
