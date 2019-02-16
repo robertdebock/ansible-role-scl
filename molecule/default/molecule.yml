@@ -34,8 +34,10 @@ platforms:
     image: opensuse:leap
   - name: scl-opensuse-tumbleweed
     image: opensuse:tumbleweed
-  - name: scl-ubuntu-artful
-    image: ubuntu:artful
+  - name: scl-ubuntu-latest
+    image: ubuntu:latest
+  - name: scl-ubuntu-rolling
+    image: ubuntu:rolling
   - name: scl-ubuntu-devel
     image: ubuntu:devel
   - name: scl-ubuntu-latest
