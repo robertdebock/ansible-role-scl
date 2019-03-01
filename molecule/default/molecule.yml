@@ -32,8 +32,6 @@ platforms:
     image: fedora:rawhide
   - name: scl-opensuse-leap
     image: opensuse:leap
-  - name: scl-opensuse-tumbleweed
-    image: opensuse:tumbleweed
   - name: scl-ubuntu-latest
     image: ubuntu:latest
   - name: scl-ubuntu-rolling
