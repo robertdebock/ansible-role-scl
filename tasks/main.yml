@@ -3,7 +3,7 @@
 - name: install centos-release-scl
   package:
     name: centos-release-scl
-    state: "{{ scl_package_state }}"
+    state: present
   when:
     - ansible_distribution in [ "CentOS", "RedHat" ]
   register: scl_install_centos_release_scl
