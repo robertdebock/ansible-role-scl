@@ -6,6 +6,9 @@ scl
 
 Install SCL on your system.
 
+<img src="https://img.shields.io/ansible/role/d/22095"/>
+<img src="https://img.shields.io/ansible/quality/22095"/>
+
 Example Playbook
 ----------------
 
@@ -58,6 +61,12 @@ The following roles can be installed to ensure all requirements are met, using `
 
 ```
 
+This role uses the following modules:
+```yaml
+---
+- package
+```
+
 Context
 -------
 
@@ -74,10 +83,13 @@ This role has been tested against the following distributions and Ansible versio
 
 |distribution|ansible 2.7|ansible 2.8|ansible devel|
 |------------|-----------|-----------|-------------|
-|centos-6|yes|yes|yes*|
+|centos-7|yes|yes|yes*|
 |centos-latest|yes|yes|yes*|
 
 A single star means the build may fail, it's marked as an experimental build.
+
+
+
 
 Testing
 -------
