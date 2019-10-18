@@ -3,62 +3,19 @@ dependency:
   name: galaxy
   options:
     role-file: requirements.yml
-driver:
-  name: docker
 lint:
   name: yamllint
+driver:
+  name: docker
 platforms:
-  - name: scl-alpine-edge
-    image: alpine:edge
-    command: sh -c "while true ; do sleep 1 ; done"
-    pre_build_image: yes
-  - name: scl-alpine-latest
-    image: alpine:latest
-    command: sh -c "while true ; do sleep 1 ; done"
-    pre_build_image: yes
-  - name: scl-archlinux
-    image: archlinux/base
-    pre_build_image: yes
-  - name: scl-centos-6
-    image: centos:6
-    pre_build_image: yes
-  - name: scl-centos-latest
-    image: centos:latest
-    pre_build_image: yes
-  - name: scl-debian-stable
-    image: debian:stable
-    pre_build_image: yes
-  - name: scl-debian-unstable
-    image: debian:unstable
-    pre_build_image: yes
-  - name: scl-fedora-latest
-    image: fedora:latest
-    pre_build_image: yes
-  - name: scl-fedora-rawhide
-    image: fedora:rawhide
-    pre_build_image: yes
-  - name: scl-opensuse-leap
-    image: opensuse/leap
-    pre_build_image: yes
-  - name: scl-ubuntu-latest
-    image: ubuntu:latest
-    pre_build_image: yes
-  - name: scl-ubuntu-rolling
-    image: ubuntu:rolling
-    pre_build_image: yes
-  - name: scl-ubuntu-devel
-    image: ubuntu:devel
+  - name: "${image:-default}-${TOX_ENVNAME:-default}"
+    image: "${namespace}${image:-docker-fedora-systemd}:${tag:-latest}"
+    command: sh -c "while true ; do sleep 30 ; done"
     pre_build_image: yes
 provisioner:
   name: ansible
   playbooks:
-    prepare: ../resources/prepare.yml
-    converge: ../resources/playbook.yml
-  inventory:
-    host_vars:
-      scl-fedora-latest:
-        ansible_python_interpreter: /usr/bin/python3
-      scl-fedora-rawhide:
-        ansible_python_interpreter: /usr/bin/python3
+    prepare: prepare.yml
+    converge: playbook.yml
 scenario:
   name: default
