@@ -11,10 +11,6 @@ galaxy_info:
     - name: EL
       versions:
         - 7
-        - 8
-    - name: Fedora
-      versions:
-        - all
 
   galaxy_tags:
     - scl
@@ -23,7 +19,5 @@ galaxy_info:
     - packages
     - alpine
     - centos
-    - fedora
-    - rhel
 
 dependencies: []

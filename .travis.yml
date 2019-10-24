@@ -11,14 +11,9 @@ env:
   matrix:
     - image="docker-centos-systemd" tag="7"
     - image="docker-redhat-systemd" tag="7"
-    - image="docker-centos-systemd"
-    - image="docker-redhat-systemd"
-    - image="docker-fedora-systemd"
-    - image="docker-fedora-systemd" tag="rawhide"
 
 matrix:
   allow_failures:
-    - env: image="docker-fedora-systemd" tag="rawhide"
 
 cache:
   - pip

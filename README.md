@@ -85,10 +85,6 @@ This role has been tested on these [container images](https://hub.docker.com/):
 |---------|---|--------------|
 |docker-centos-systemd|7|no|
 |docker-redhat-systemd|7|no|
-|docker-centos-systemd|latest|no|
-|docker-redhat-systemd|latest|no|
-|docker-fedora-systemd|latest|no|
-|docker-fedora-systemd|rawhide|yes|
 
 This role has been tested on these Ansible versions:
 

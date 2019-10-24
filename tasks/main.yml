@@ -5,7 +5,7 @@
     name: centos-release-scl
     state: present
   when:
-    - ansible_distribution in [ "CentOS", "RedHat" ]
+    - ansible_distribution == "CentOS"
   register: scl_install_centos_release_scl
   until: scl_install_centos_release_scl is succeeded
   retries: 3
