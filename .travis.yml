@@ -8,9 +8,11 @@ services:
   - docker
 
 env:
+  global:
+    namespace="robertdebock"
   matrix:
-    - image="docker-centos-systemd" tag="7"
-    - image="docker-redhat-systemd" tag="7"
+    - image="centos" tag="7"
+    - image="redhat" tag="7"
 
 matrix:
   allow_failures:
