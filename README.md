@@ -84,7 +84,6 @@ This role has been tested on these [container images](https://hub.docker.com/):
 |container|tag|allow_failures|
 |---------|---|--------------|
 |centos|7|no|
-|redhat|7|no|
 
 This role has been tested on these Ansible versions:
 
