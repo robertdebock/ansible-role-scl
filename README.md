@@ -95,7 +95,6 @@ Some variarations of the build matrix do not work. These are the variations and 
 | CentOS/RHEL 8 | SCL is not available. |
 
 
-
 Testing
 -------
 
