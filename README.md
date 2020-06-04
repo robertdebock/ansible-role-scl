@@ -2,9 +2,9 @@
 
 Install SCL on your system.
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-scl.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-scl)|[![github](https://github.com/robertdebock/ansible-role-scl/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-scl/actions)|[![quality](https://img.shields.io/ansible/quality/22095)](https://galaxy.ansible.com/robertdebock/scl)|[![downloads](https://img.shields.io/ansible/role/d/22095)](https://galaxy.ansible.com/robertdebock/scl)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-scl.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-scl)|[![github](https://github.com/robertdebock/ansible-role-scl/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-scl/actions)|[![quality](https://img.shields.io/ansible/quality/22095)](https://galaxy.ansible.com/robertdebock/scl)|[![downloads](https://img.shields.io/ansible/role/d/22095)](https://galaxy.ansible.com/robertdebock/scl)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-scl.svg)](https://github.com/robertdebock/ansible-role-scl/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
