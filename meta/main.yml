@@ -39,6 +39,5 @@ galaxy_info:
     - repository
     - installer
     - packages
-    - centos
 
 dependencies: []
