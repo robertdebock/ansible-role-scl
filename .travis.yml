@@ -13,38 +13,18 @@ python:
 services:
   - docker
 
-env:
-  global:
-    namespace="robertdebock"
-  jobs:
-    - image="alpine" tag="latest"
-    - image="amazonlinux" tag="1"
-    - image="amazonlinux" tag="latest"
-    - image="centos" tag="7"
-    - image="debian" tag="latest"
-    - image="debian" tag="bullseye"
-    - image="fedora" tag="32"
-    - image="fedora" tag="latest"
-    - image="fedora" tag="rawhide"
-    - image="opensuse" tag="latest"
-    - image="ubuntu" tag="latest"
-    - image="ubuntu" tag="bionic"
-    - image="ubuntu" tag="xenial"
-
 cache:
   - pip
 
 install:
   - pip install --upgrade pip
-  - pip install tox
+  - pip install yamllint
+  - pip install ansible-lint
 
 script:
-  - function retry { counter=0 ; until "$@" ; do exit=$? ; counter=$(($counter + 1)) ; if [ $counter -ge 3 ] ; then return $exit ; fi ; done ; return 0; } ; retry tox
+  - yamllint .
+  - ansible-lint
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
-  slack:
-    secure: "FqEY8La926wiVlF3EaUA7yHQTX3OtYIAPH+JaHxQnmRiXOeKtga/QfYRlMPxA6ol4X40xn2gaxZH5RHULiZju24dms6cxVvbqwHLCtiLJfdluFWZqjpgydQmzcnMTqTdkNgKeVPu6EoFGNIFexMrV7zWWf4gcc5lWoZqMTdDidQH4kMu4BgGeblnvARyWqyyZRCOEAxB/lpuSmk5jUk1j1KlqiEO44r/dPV88R3GNV1FSNAk01sdbM15G78GjB2ZuJ4n9NBO2hRyr18xF2TozRytUEW59Og1D1OEYXyFF/YqdOZ2Yiym8s70sW6ehFSc7/ERDdGD7I7lpCz2HUfueCL/m4FbWdmWgzka2YMJsiUGbedMSFSzucISvmL/J3l8GT4OekP8YnqbpBddxycDngkgmJa/lWgYAP2MDJ2idV6J1q4L/r+W8EwJRRJKPCiyIeiyY6IQkTpu8BV/hxILFlKVMFXfMHp6jifWzDaOdwgy63z37lL3KTCNwuTSWE2YPM/pC/YDpLKgrSdJWfEN9KovEkfOWxgTU4MJOVaMfkweBpwaCjdJ8Q3Eg4KGKsb/kEO9zqpntJjbzWPv+qJHB7bGbJ6vjIg62pRh5I9q/LONPBpelBAgV8l/vk3YxzjH1tYGaqS1Rzx+aHyKWItkjvw+k5WIEjOeGj7gPTQLZyI="
-    on_success: change
-    template: "%{result}: %{repository_slug}@%{branch}, build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>)"
   email: false
