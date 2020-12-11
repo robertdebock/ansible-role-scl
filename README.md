@@ -2,9 +2,9 @@
 
 Install SCL on your system.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-scl.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-scl)|[![github](https://github.com/robertdebock/ansible-role-scl/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-scl/actions)|[![quality](https://img.shields.io/ansible/quality/22095)](https://galaxy.ansible.com/robertdebock/scl)|[![downloads](https://img.shields.io/ansible/role/d/22095)](https://galaxy.ansible.com/robertdebock/scl)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-scl.svg)](https://github.com/robertdebock/ansible-role-scl/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-scl.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-scl)|[![github](https://github.com/robertdebock/ansible-role-scl/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-scl/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-scl/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-scl)|[![quality](https://img.shields.io/ansible/quality/22095)](https://galaxy.ansible.com/robertdebock/scl)|[![downloads](https://img.shields.io/ansible/role/d/22095)](https://galaxy.ansible.com/robertdebock/scl)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-scl.svg)](https://github.com/robertdebock/ansible-role-scl/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -37,10 +37,11 @@ Also see a [full explanation and example](https://robertdebock.nl/how-to-use-the
 
 ## [Requirements](#requirements)
 
-- Access to a repository containing packages, likely on the internet.
-- A recent version of Ansible. (Tests run on the current, previous and next release of Ansible.)
+- pip packages listed in [requirements.txt](https://github.com/robertdebock/ansible-role-scl/blob/master/requirements.txt).
 
 ## [Status of requirements](#status-of-requirements)
+
+The following roles are used to prepare a system. You may choose to prepare your system in another way, I have tested these roles as well.
 
 | Requirement | Travis | GitHub |
 |-------------|--------|--------|
