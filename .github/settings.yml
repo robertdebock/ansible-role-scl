@@ -5,4 +5,4 @@
 repository:
   description: Install SCL on your system.
   homepage: https://robertdebock.nl/
-  topics: scl, repository, installer, packages, ansible, molecule, tox, playbook
+  topics: scl, repository, installer, packages, ansible, molecule, playbook
